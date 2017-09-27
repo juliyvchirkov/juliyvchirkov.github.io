@@ -32,7 +32,7 @@ a::before {
 }
 img {
   max-width: 100%;
-  max-height: 90vh;  
+  max-height: 80vh;  
   height: auto;  
   border-radius: 50%;
   filter: saturate(1.25) contrast(1.05);
