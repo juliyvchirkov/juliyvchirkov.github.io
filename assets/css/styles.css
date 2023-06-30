@@ -5,6 +5,7 @@ body {
 }
 body.flat {
   background-color: #fff;
+  transition: background-color .5s ease-in-out;
 }
 a {
   max-width: 450px;
@@ -19,25 +20,25 @@ a::before {
   left: 5vh;
   right: 5vh;
   bottom: 0;
-  content: '';  
+  content: '';
   border-radius: 50%;
-  background: url(/assets/img/juliyvchirkov.jpg) 50% 50% / cover no-repeat transparent;  
+  background: url(/assets/img/juliyvchirkov.jpg?06/30/2023) 50% 50% / cover no-repeat transparent;
   filter: saturate(3) contrast(1.5) blur(14px);
   opacity: 1;
   z-index: -1;
-  transition: opacity .5s ease-in-out;  
+  transition: opacity .5s ease-in-out;
 }
 .flat a::before {
   opacity: 0;
 }
 img {
   max-width: 100%;
-  max-height: 80vh;  
-  height: auto;  
+  max-height: 80vh;
+  height: auto;
   border-radius: 50%;
   filter: saturate(1.25) contrast(1.05);
   box-shadow: 0 0 0 0 transparent, 0 5px 15px -8px rgba(0, 0, 0, .25), 0 8px 10px -5px rgba(0, 0, 0, .2);
-  transition: box-shadow .5s ease-in-out;  
+  transition: box-shadow .5s ease-in-out;
 }
 .flat img {
   box-shadow: 0 0 0 0 transparent;

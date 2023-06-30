@@ -12,5 +12,5 @@ globalThis.addEventListener('load', () => {
         }
     }
 
-    ['click', 'mouseenter', 'mouseleave'].forEach((type) => document.addEventListener(type, listener))
+    ['click', 'mouseenter', 'mouseleave'].forEach((type) => gh.addEventListener(type, listener))
 })
