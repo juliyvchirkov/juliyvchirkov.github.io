@@ -3,7 +3,7 @@
 addEventListener('load', () => {
     const container = document.getElementById('github')
     const events = ['touchstart', 'mouseenter', 'touchend', 'touchcancel', 'mouseleave']
-    const listener = (event) => document.body.className[
+    const listener = (event) => document.body.classList[
         events.indexOf(event.type) < 2 ? 'add' : 'remove'
     ]('flat')
 
