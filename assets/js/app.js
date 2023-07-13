@@ -1,16 +1,13 @@
 'use strict'
 
-globalThis.addEventListener('load', () => {
-    const gh = document.getElementById('gh')
-    const listener = (evt) => {
-        document.body.className = evt.type === 'mouseleave' ? '' : 'flat'
+addEventListener('load', () => {
+    const container = document.getElementById('github')
+    const events = ['touchstart', 'mouseenter', 'touchend', 'touchcancel', 'mouseleave']
+    const listener = (event) => document.body.className[
+        events.indexOf(event.type) < 2 ? 'add' : 'remove'
+    ]('flat')
 
-        if (evt.type === 'click') {
-            evt.preventDefault()
-
-            setTimeout(() => location.assign(gh.href), 500)
-        }
+    for (const event of events) {
+        container.addEventListener(event, listener)
     }
-
-    ['click', 'mouseenter', 'mouseleave'].forEach((type) => gh.addEventListener(type, listener))
 })

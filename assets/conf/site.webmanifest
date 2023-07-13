@@ -1,0 +1,27 @@
+{
+  "name": "@juliyvchirkov",
+  "short_name": "@juliyvchirkov",
+  "description": "Juliy V. Chirkov juliyvchirkov@github",
+  "icons": [
+    {
+        "src": "/assets/favicon/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "/assets/favicon/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+    }
+  ],
+  "theme_color": "#fef",
+  "background_color": "#fef",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display_override": ["window-control-overlay", "standalone"],
+  "display": "standalone",
+  "orientation": "portrait"
+}
