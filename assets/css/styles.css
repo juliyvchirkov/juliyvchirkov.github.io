@@ -16,9 +16,9 @@ body.flat {
 
 a,
 img {
-  max-width: 80vh;
+  max-width: 80vw;
   max-height: 80vh;
-  box-shadow: 0 0 0 0 transparent, 0 5px 15px -8px rgba(0, 0, 0, .25), 0 8px 10px -5px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 0 0 transparent, 0 5px 18px -8px rgb(0 0 0 / 25%), 0 8px 12px -5px rgb(0 0 0 / 20%);
   transition: box-shadow .5s ease-in-out;
 }
 
@@ -39,12 +39,12 @@ a {
 a::before {
   position: absolute;
   top: 10vh;
-  left: 5vh;
-  right: 5vh;
-  bottom: 0;
+  left: 2vh;
+  right: -2vh;
+  bottom: -1vh;
   content: '';
-  background: url(/assets/img/juliyvchirkov.jpg?06/30/2023) 50% 50% / cover no-repeat transparent;
-  filter: saturate(2.5) contrast(1.25) blur(15px);
+  background: url(../img/juliy.v.chirkov.jpg?01/19/2024) 50% 50% / cover no-repeat transparent;
+  filter: saturate(2.5) contrast(1.5) blur(15px);
   opacity: 1;
   transition: opacity .5s ease-in-out;
 }
@@ -54,7 +54,7 @@ a::before {
 }
 
 img {
-  filter: saturate(1.25) contrast(1.025);
+  filter: saturate(1.15) contrast(1.01);
 }
 
 .flat a,
